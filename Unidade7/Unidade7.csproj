@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{291B2CFD-6423-4932-8353-5361B6B78CF0}</ProjectGuid>
+    <ProjectGuid>{6F936968-3A05-400C-9B40-AAAA570D4CB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Unidade6</RootNamespace>
-    <AssemblyName>Unidade6</AssemblyName>
+    <RootNamespace>Unidade7</RootNamespace>
+    <AssemblyName>Unidade7</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,11 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercicios Complementares\Exercicio1.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio2.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio3.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio4.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,7 +48,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Exercicios de Fixação\" />
+    <Folder Include="ExerciciosSlide\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
