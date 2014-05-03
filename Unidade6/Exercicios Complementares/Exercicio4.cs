@@ -7,7 +7,7 @@ namespace Unidade6.Exercicios_Complementares
         public static int GolsGremio = 0;
         public static int GolsInter = 0;
 
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             CalculoGolsPartida();
             var inicioJogo = DateTime.Now;
