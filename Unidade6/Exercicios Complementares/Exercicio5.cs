@@ -11,7 +11,7 @@ namespace Unidade6.Exercicios_Complementares
         public static int TotalCaixas = 0;
         public static double AdicionalPagamento = 0;
 
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             Console.WriteLine("Digite o ID do funcionário.");
             Console.WriteLine("Digite a ideade do funcionário.");
@@ -22,10 +22,7 @@ namespace Unidade6.Exercicios_Complementares
 
 
             ValidaIdadeFuncionario();
-            CalculaSalario();
-            CalculaAdicional();
 
-            ImprimeDados();
         }
 
         private static void ImprimeDados()
@@ -41,10 +38,18 @@ namespace Unidade6.Exercicios_Complementares
             if (IdadeFuncionario < 18)
             {
                 Console.WriteLine("Pessoa sem idade miníma legal para trabalhar.");
+                Console.ReadKey();
             }
-            if (IdadeFuncionario > 65)
+            else if (IdadeFuncionario > 65)
             {
                 Console.WriteLine("Funcionário aposentado, não pode continuar trabalhando.");
+                Console.ReadKey();
+            }
+            else
+            {
+                CalculaSalario();
+                CalculaAdicional();
+                ImprimeDados();
             }
         }
 
