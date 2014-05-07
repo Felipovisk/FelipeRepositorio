@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExerciciosSlide\ExerciciosOperadoresRelacionais.cs" />
     <Compile Include="ExerciciosSlide\Exercicio1_OperadoresAritimeticos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
