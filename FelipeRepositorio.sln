@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidade6", "Unidade6\Unidad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidade7", "Unidade7\Unidade7.csproj", "{6F936968-3A05-400C-9B40-AAAA570D4CB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedindoaFebreV", "MedindoaFebreV\MedindoaFebreV.csproj", "{DBB8A67B-B576-49F9-8F6D-240112E6A855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6F936968-3A05-400C-9B40-AAAA570D4CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F936968-3A05-400C-9B40-AAAA570D4CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F936968-3A05-400C-9B40-AAAA570D4CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB8A67B-B576-49F9-8F6D-240112E6A855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB8A67B-B576-49F9-8F6D-240112E6A855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB8A67B-B576-49F9-8F6D-240112E6A855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB8A67B-B576-49F9-8F6D-240112E6A855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

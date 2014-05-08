@@ -10,7 +10,7 @@ namespace Unidade6.Exercicios_Complementares
         public static double AlturaCandidata = 0;
         public static string Opcao = "";
         public static double MaiorAltura = 0;
-        public static void Main(String[] args)
+        public static void Main1(String []args)
         {
             List<string> NomeCandidatas = new List<string>();
             List<double> AlturaCandidatas = new List<double>();

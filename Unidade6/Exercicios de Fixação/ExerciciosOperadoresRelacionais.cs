@@ -10,7 +10,7 @@ namespace Unidade6.Exercicios_de_Fixação
     {
         public static int x = 50;
         public static int y = 40;
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             x = y;
             x += y;
@@ -20,6 +20,7 @@ namespace Unidade6.Exercicios_de_Fixação
             x %= y;
             x &= y;
             x |= y;
+
             
             
             
