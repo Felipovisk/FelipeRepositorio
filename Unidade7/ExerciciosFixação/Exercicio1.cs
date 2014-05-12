@@ -19,10 +19,10 @@ relatório deve mostrar também o total de vendas da empresa. */
         public static double[] TotalVendasCorretor = new double[3];
         public static double TotalVendasEmpresa = 0;
 
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
+            LeituraDados();
             GeraRelatorio();
-
             ImprimeRelatorio();
         }
 
@@ -33,17 +33,15 @@ relatório deve mostrar também o total de vendas da empresa. */
                 Console.WriteLine("Corretor: " + Corretores[i]);
                 Console.WriteLine("Total de vendas: " + TotalVendasCorretor[i] + " Reais.");
                 Console.WriteLine("Valor da comissão de vendas: " + ComissaoCorretores[i] + " Reais.");
-                Console.WriteLine("Valor total de vendas da empresa: " + TotalVendasEmpresa + "Reais.");
-                Console.ReadKey();
             }
+            Console.WriteLine("Valor total de vendas da empresa: " + TotalVendasEmpresa + "Reais.");
+            Console.ReadKey();
         }
 
         private static void GeraRelatorio()
         {
             for (int i = 0; i < 3; i++)
             {
-                LeituraDados(i);
-
                 if (ValorVendaCorretores[i] > 50000)
                 {
                     ComissaoCorretores[i] = (ValorVendaCorretores[i] * 12) / 100;
@@ -63,13 +61,15 @@ relatório deve mostrar também o total de vendas da empresa. */
             TotalVendasEmpresa = ValorVendaCorretores[0] + ValorVendaCorretores[1] + ValorVendaCorretores[2];
         }
 
-        private static void LeituraDados(int i)
+        private static void LeituraDados()
         {
-            Console.WriteLine("Digite o nome do corretor.");
-            Corretores[i] = Console.ReadLine();
-            Console.WriteLine("Digite o valor de vendas do corretor.");
-            ValorVendaCorretores[i] = double.Parse(Console.ReadLine());
-            
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Digite o nome do corretor.");
+                Corretores[i] = Console.ReadLine();
+                Console.WriteLine("Digite o valor de vendas do corretor.");
+                ValorVendaCorretores[i] = double.Parse(Console.ReadLine());
+            }
         }
     }
 }
