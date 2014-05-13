@@ -9,7 +9,7 @@ namespace Unidade8.ExerciciosSlide
     class VerificaValorProduto
     {
         public static Random AvaliaValor = new Random();
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             double valorProduto = AvaliaValor.Next(0,100);
             if (valorProduto > 50)

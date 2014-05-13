@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExerciciosSlide\ADivididoPorB.cs" />
     <Compile Include="ExerciciosSlide\AprovadoReprovado.cs" />
+    <Compile Include="ExerciciosSlide\EscolheCaminho.cs" />
     <Compile Include="ExerciciosSlide\VerificaValorProduto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
