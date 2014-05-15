@@ -10,7 +10,7 @@ namespace Unidade8.ExerciciosSlide
     {
         public static Random Divisor = new Random();
         public static Random Dividendo = new Random();
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             if (Divisor.Next(0, 100) % (Dividendo.Next(0, 100)) == 0)
             {
