@@ -68,7 +68,8 @@ namespace MedindoaFebreVI
                     Cont2 += 1;
                 }
             }
-            for (int i = 0; i < 100; i++){
+            for (int i = 0; i < 100; i++)
+            {
                 Console.WriteLine("Matricula: " + MatriculaAluno[i]);
                 Console.WriteLine("Frenquencia : " + FrenquenciaAluno[i] + " aulas comparecidas.");
                 Console.WriteLine("Avaliação final: " + Codigo);

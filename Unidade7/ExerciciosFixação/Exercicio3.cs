@@ -16,7 +16,7 @@ preço e preço com desconto de cada artigo e o total a pagar.*/
         public static double TotalaPagar = 0;
         public static double[] TotalCompra = new double[4];
 
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             LeituraDados();
             CalculaArtigos();
