@@ -50,6 +50,7 @@
     <Compile Include="Exercicios Complementares\Exercicio7.cs" />
     <Compile Include="Exercicios Complementares\Exercicio8.cs" />
     <Compile Include="Exercicios de Fixação\ExerciciosOperadoresRelacionais.cs" />
+    <Compile Include="ExerciciosFixação2\Exercicio1.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio10.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio8.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio9.cs" />

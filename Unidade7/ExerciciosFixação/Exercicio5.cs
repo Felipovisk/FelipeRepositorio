@@ -16,7 +16,7 @@ namespace Unidade7.ExerciciosFixação1
         public static int[] RollTheDice = new int[100];
         public static Random Dado = new Random();
         public static int[] Contador = new int[6];
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             for (int i = 0; i < 100; i++)
             {

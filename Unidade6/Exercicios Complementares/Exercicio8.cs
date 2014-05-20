@@ -23,7 +23,7 @@ tipo de letra) e imprima a versão formatada no estilo exemplificado acima.*/
         public static int QuantidadeNomes = 0 ;
         public static string[] NomesCompletos;
         public static string[] NomesAutores = new string[100];
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             Console.WriteLine("Digite quantos autores serão cadastrados.");
             QuantidadeNomes = int.Parse(Console.ReadLine());
