@@ -4,37 +4,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unidade7.ExerciciosFixação
+namespace Unidade7.ExerciciosFixação1
 {
-    /*Faça um algoritmo que leia os valores A, B e C. Mostre uma mensagem que 
-informe se a soma de A com B é menor, maior ou igual a C. */
+/* A prefeitura de uma cidade deseja fazer uma pesquisa entre seus habitantes. 
+Faça um algoritmos para coletar dados sobre o salário e número de filhos de cada 
+habitante e após as leituras, escrever: 
+a) Média de salário da população 
+b) Média do número de filhos 
+c) Maior salário dos habitantes 
+d) Percentual de pessoas com salário menor que R$ 150,00 
+Obs.: O final da leituras dos dados se dará com a entrada de um “salário negativo” */
 
     class Exercicio2
     {
-        public static int a, b, c = 0;
-
+        public static double SalarioCidadao = 0;
+        public static double FilhosCidadao = 0;
+        public static double MediaSalario = 0;
+        public static double MediaFilhos = 0;
+        public static int ContSalarioMenor150 = 0;
+        public static double PercentualSalario = 0;
+        public static double Aux = 0;
+        public static double Cont = 0;
+        public static double ContFilhos = 0;
+        public static double SomaSalario = 0;
         public static void Main1(String[] args)
         {
-            Console.WriteLine("Digite os valores de 'A', 'B' e 'C'.");
-            a = int.Parse(Console.ReadLine());
-            b = int.Parse(Console.ReadLine());
-            c = int.Parse(Console.ReadLine());
-            if (a + b > c)
-            {
-                Console.WriteLine("A soma de 'A' com 'B' é maior que 'C'.");
-                Console.ReadKey();
-            }
-            else if (a + b < c)
-            {
-                Console.WriteLine("A soma de 'A' com 'B' é menor que 'C'.");
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("A soma de 'A' com 'B' é igual ao valor de 'C'.");
-                Console.ReadKey();
-            }
+            Console.WriteLine("Digite o salario do cidadão.");
+            SalarioCidadao = double.Parse(Console.ReadLine());
+            while (SalarioCidadao >= 0)
+            {               
+                Cont++;
+                Console.WriteLine("Digite quantos filhos o cidadão possui.");
+                FilhosCidadao = double.Parse(Console.ReadLine());
+                SomaSalario += SalarioCidadao; 
+                ContFilhos += FilhosCidadao;                
+                
+                if (SalarioCidadao > Aux)
+                {
+                    Aux = SalarioCidadao;
+                }
+                if (SalarioCidadao < 150)
+                {
+                    ++ContSalarioMenor150;                    
+                }
+                PercentualSalario = (ContSalarioMenor150 * 100) / Cont;
+                MediaSalario = SomaSalario / Cont;
+                MediaFilhos = ContFilhos / Cont;
 
+                Console.WriteLine("Digite o salario do cidadão.");
+                SalarioCidadao = double.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("A media de salario da população é de: " + MediaSalario + " Reais.");
+            Console.WriteLine("A media de filhos da população é de: " + MediaFilhos + " filhos por cidadão.");
+            Console.WriteLine("O maior salario dos habitantes é de: " + Aux + " Reais.");
+            Console.WriteLine("Percentual de cidadões com salário abaixo de R$ 150,00 é de: " + PercentualSalario + " %.");
+            Console.ReadKey();
+            
         }
     }
 }

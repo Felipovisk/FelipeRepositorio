@@ -1,75 +1,42 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Unidade7.ExerciciosFixação
+namespace Unidade7.ExerciciosFixação1
 {
-    /* Uma empresa de vendas tem três corretores. A empresa paga ao corretor uma
-comissão calculada de acordo com o valor de suas vendas. Se o valor da venda
-de um corretor for maior que R$ 50.000.00 a comissão será de 12% do valor
-vendido. Se o valor da venda do corretor estiver entre R$ 30.000.00 e R$
-50.000.00 (incluindo extremos) a comissão será de 9.5%. Em qualquer outro
-caso, a comissão será de 7%. Escreva um algoritmo que gere um relatório
-contendo nome, valor da venda e comissão de cada um dos corretores. O
-relatório deve mostrar também o total de vendas da empresa. */
+    /*1) Faça um algoritmo para ler o código e o preço de 15 produtos, calcular e 
+    escrever: 
+- o maior preço lido 
+- a média aritmética dos preços dos produtos.*/
 
-    internal class Exercicio1
+    class Exercicio1
     {
-        public static string[] Corretores = new string[3];
-        public static double[] ValorVendaCorretores = new double[3];
-        public static double[] ComissaoCorretores = new double[3];
-        public static double[] TotalVendasCorretor = new double[3];
-        public static double TotalVendasEmpresa = 0;
-
+        public static string[] CodigoProduto = new string[15];
+        public static double[] PrecoProduto = new double[15];
+        public static double Aux = 0;
+        public static double MediaProduto = 0;
         public static void Main1(String[] args)
         {
-            LeituraDados();
-            GeraRelatorio();
-            ImprimeRelatorio();
-        }
-
-        private static void ImprimeRelatorio()
-        {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 15; i++)
             {
-                Console.WriteLine("Corretor: " + Corretores[i]);
-                Console.WriteLine("Total de vendas: " + TotalVendasCorretor[i] + " Reais.");
-                Console.WriteLine("Valor da comissão de vendas: " + ComissaoCorretores[i] + " Reais.");
+                Console.WriteLine("Digite o código do produto.");
+                CodigoProduto[i] = Console.ReadLine();
+                Console.WriteLine("Digite o preço do produto.");
+                PrecoProduto[i] = double.Parse(Console.ReadLine());
+                if (PrecoProduto[i] > Aux)
+                {
+                    Aux = PrecoProduto[i];
+                }
+                MediaProduto += PrecoProduto[i] / 15;
             }
-            Console.WriteLine("Valor total de vendas da empresa: " + TotalVendasEmpresa + "Reais.");
+            Console.WriteLine("O preço do maior produto é: " + Aux + " Reais.");
+            Console.WriteLine("A média dos produtos é de: " + MediaProduto + " Reais.");
             Console.ReadKey();
-        }
+            
+                
 
-        private static void GeraRelatorio()
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                if (ValorVendaCorretores[i] > 50000)
-                {
-                    ComissaoCorretores[i] = (ValorVendaCorretores[i] * 12) / 100;
-                    TotalVendasCorretor[i] = ValorVendaCorretores[i] + ComissaoCorretores[i];
-                }
-                else if (ValorVendaCorretores[i] >= 30000 & ValorVendaCorretores[i] <= 50000)
-                {
-                    ComissaoCorretores[i] = (ValorVendaCorretores[i] * 9.5) / 100;
-                    TotalVendasCorretor[i] = ValorVendaCorretores[i] + ComissaoCorretores[i];
-                }
-                else
-                {
-                    ComissaoCorretores[i] = (ValorVendaCorretores[i] * 7) / 100;
-                    TotalVendasCorretor[i] = ValorVendaCorretores[i] + ComissaoCorretores[i];
-                }
-            }
-            TotalVendasEmpresa = ValorVendaCorretores[0] + ValorVendaCorretores[1] + ValorVendaCorretores[2];
-        }
-
-        private static void LeituraDados()
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("Digite o nome do corretor.");
-                Corretores[i] = Console.ReadLine();
-                Console.WriteLine("Digite o valor de vendas do corretor.");
-                ValorVendaCorretores[i] = double.Parse(Console.ReadLine());
-            }
         }
     }
 }

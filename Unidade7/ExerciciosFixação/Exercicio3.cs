@@ -1,65 +1,40 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Unidade7.ExerciciosFixação
+namespace Unidade7.ExerciciosFixação1
 {
-    /*Uma pessoa comprou quatro artigos em uma loja. Para cada artigo, tem-se
-nome, preço e percentual de desconto. Faça um algoritmo que imprima nome,
-preço e preço com desconto de cada artigo e o total a pagar.*/
-
-    internal class Exercicio3
-    {
-        public static string NomeCliente = "";
-        public static string[] NomeArtigo = new string[4];
-        public static double[] ValorArtigo = new double[4];
-        public static int[] PercentualDesconto = new int[4];
-        public static double[] ValorDesconto = new double[4];
-        public static double TotalaPagar = 0;
-        public static double[] TotalCompra = new double[4];
-
+ /* Uma loja está levantando o valor total de todas as mercadorias em estoque. Escreva 
+ um algoritmo que permita a entrada das seguintes informações: 
+a) o número total de mercadorias no estoque; 
+b) o valor de cada mercadoria. Ao final imprimir o valor total em estoque e a média de 
+valor das mercadorias. */
+    class Exercicio3
+    {        
+        public static double[] ValorMercadoria;
+        public static double SomaMercadoria = 0;
+        public static double MediaMecadoria = 0;
         public static void Main1(String[] args)
         {
-            LeituraDados();
-            CalculaArtigos();
-            ImprimeDados();
-        }
-
-        private static void LeituraDados()
-        {
-            Console.WriteLine("Digite o nome do cliente.");
-            NomeCliente = Console.ReadLine();
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine("Digite o nome do artigo.");
-                NomeArtigo[i] = Console.ReadLine();
-                Console.WriteLine("Digite o valor do artigo.");
-                ValorArtigo[i] = double.Parse(Console.ReadLine());
-                Console.WriteLine("Digite o percentual de desconto do artigo.");
-                PercentualDesconto[i] = int.Parse(Console.ReadLine());
-            }
-        }
-
-        private static void ImprimeDados()
-        {
-            Console.WriteLine("Nome do cliente: " + NomeCliente);
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine("Artigo: " + NomeArtigo[i]);
-                Console.WriteLine("Valor do artigo: " + ValorArtigo[i] + " Reais.");
-                Console.WriteLine("Valor do artigo com desconto: " + TotalCompra[i] + " Reais.");
-                Console.WriteLine("Valor total a pagar é: " + TotalaPagar + " Reais.");
-            }
-            Console.ReadLine();
-        }
-
-        private static void CalculaArtigos()
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                ValorDesconto[i] = (ValorArtigo[i] * PercentualDesconto[i]) / 100;
-                TotalCompra[i] = ValorArtigo[i] - ValorDesconto[i];
-                TotalaPagar = TotalaPagar + TotalCompra[i];
-            }
             
+            Console.WriteLine("Digite a quantidade de produtos em estoque.");
+            var quantidadeMercadoria = int.Parse(Console.ReadLine());
+            ValorMercadoria = new double[quantidadeMercadoria];
+            
+            for (int i = 0; i < quantidadeMercadoria; i++)
+            {
+                Console.WriteLine("Digite o valor do produto.");
+                ValorMercadoria[i] = double.Parse(Console.ReadLine());
+                SomaMercadoria += ValorMercadoria[i];
+
+            }
+            MediaMecadoria = SomaMercadoria / quantidadeMercadoria;
+            Console.WriteLine("O valor total de mercadorias em estoque é de: " + SomaMercadoria + " Reais.");
+            Console.WriteLine("A média de valor das mercadorias em estoque é de: " + MediaMecadoria + " Reais.");
+            Console.ReadKey();
+
         }
     }
 }
