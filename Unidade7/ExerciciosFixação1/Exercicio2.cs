@@ -15,7 +15,7 @@ c) Maior salário dos habitantes
 d) Percentual de pessoas com salário menor que R$ 150,00 
 Obs.: O final da leituras dos dados se dará com a entrada de um “salário negativo” */
 
-    class ExercicioFixacao2
+    class Exercicio2
     {
         public static double SalarioCidadao = 0;
         public static double FilhosCidadao = 0;
