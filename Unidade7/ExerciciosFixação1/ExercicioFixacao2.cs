@@ -18,37 +18,38 @@ Obs.: O final da leituras dos dados se dará com a entrada de um “salário neg
     class ExercicioFixacao2
     {
         public static double SalarioCidadao = 0;
-        public static int FilhosCidadao = 0;
+        public static double FilhosCidadao = 0;
         public static double MediaSalario = 0;
         public static double MediaFilhos = 0;
         public static int ContSalarioMenor150 = 0;
         public static double PercentualSalario = 0;
         public static double Aux = 0;
+        public static double Cont = 0;
+        public static double ContFilhos = 0;
+        public static double SomaSalario = 0;
         public static void Main(String[] args)
         {
             Console.WriteLine("Digite o salario do cidadão.");
             SalarioCidadao = double.Parse(Console.ReadLine());
             while (SalarioCidadao >= 0)
-            {
-                
-                double cont = 0;
-                cont ++;
+            {               
+                Cont++;
                 Console.WriteLine("Digite quantos filhos o cidadão possui.");
-                FilhosCidadao = int.Parse(Console.ReadLine());
-                MediaSalario += SalarioCidadao / cont;
-                double contfilhos = 0; contfilhos += FilhosCidadao;
-                MediaFilhos = contfilhos / cont;
+                FilhosCidadao = double.Parse(Console.ReadLine());
+                SomaSalario += SalarioCidadao; 
+                ContFilhos += FilhosCidadao;                
                 
                 if (SalarioCidadao > Aux)
                 {
                     Aux = SalarioCidadao;
                 }
-                else if (SalarioCidadao < 150)
+                if (SalarioCidadao < 150)
                 {
-                    ContSalarioMenor150++;
-                    PercentualSalario = (cont * ContSalarioMenor150) / 100;
+                    ++ContSalarioMenor150;                    
                 }
-
+                PercentualSalario = (ContSalarioMenor150 * 100) / Cont;
+                MediaSalario = SomaSalario / Cont;
+                MediaFilhos = ContFilhos / Cont;
 
                 Console.WriteLine("Digite o salario do cidadão.");
                 SalarioCidadao = double.Parse(Console.ReadLine());
