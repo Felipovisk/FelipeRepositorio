@@ -27,7 +27,7 @@ Obs.: O final da leituras dos dados se dará com a entrada de um “salário neg
         public static double Cont = 0;
         public static double ContFilhos = 0;
         public static double SomaSalario = 0;
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             Console.WriteLine("Digite o salario do cidadão.");
             SalarioCidadao = double.Parse(Console.ReadLine());
