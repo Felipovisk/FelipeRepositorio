@@ -18,7 +18,7 @@ namespace Unidade7.ExerciciosFixação1
         public static int NumeroEspacos = 0;
         public static int NumeroInicial = 1;
 
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             Console.WriteLine("Digite o numero de itens, este numero deve ser ímpar.");
             NumeroFinal = int.Parse(Console.ReadLine());

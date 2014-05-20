@@ -45,6 +45,7 @@
     <Compile Include="ExerciciosFixação1\Exercicio2.cs" />
     <Compile Include="ExerciciosFixação1\Exercicio3.cs" />
     <Compile Include="ExerciciosFixação1\Exercicio4.cs" />
+    <Compile Include="ExerciciosFixação1\Exercicio5.cs" />
     <Compile Include="ExerciciosFixação\Exercicio1.cs" />
     <Compile Include="ExerciciosFixação\Exercicio2.cs" />
     <Compile Include="ExerciciosFixação\Exercicio3.cs" />
