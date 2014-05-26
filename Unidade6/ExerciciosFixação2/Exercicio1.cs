@@ -17,7 +17,7 @@ namespace Unidade6.ExerciciosFixação2
         //public static int[] NumerosPositivos = new int[20];
         //public static int[] Contador = new int[3];
 
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             for (int i = 0; i < 20; i++)
             {

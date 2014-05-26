@@ -52,6 +52,7 @@
     <Compile Include="Exercicios de Fixação\ExerciciosOperadoresRelacionais.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio1.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio10.cs" />
+    <Compile Include="ExerciciosFixação2\Exercicio2.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio8.cs" />
     <Compile Include="ExerciciosFixação2\Exercicio9.cs" />
     <Compile Include="Program.cs" />
