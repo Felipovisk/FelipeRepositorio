@@ -44,9 +44,9 @@ namespace MedindoAFebreUnidadesIXeX
             string auxNomeMaisNovo;
             CalculaMaisNovoEMaisVelho(out auxMaisVelho, out auxNomeMaisVelho, out auxMaisNovo, out auxNomeMaisNovo);
             Console.WriteLine("O Cidadão mais alto é: " + auxNomeMaisAlto);
-            Console.WriteLine("Com : " + auxMaisAlto + " Metros de altura.");
+            Console.WriteLine("Com : " + auxMaisAlto.ToString("##.##") + " Metros de altura.");
             Console.WriteLine("O Cidadão mais baixo é: " + auxNomeMaisBaixo);
-            Console.WriteLine("Com : " + auxMaisBaixo + " Metros de altura.");
+            Console.WriteLine("Com : " + auxMaisBaixo.ToString("##.##") + " Metros de altura.");
             Console.WriteLine("O Cidadão mais velho é: " + auxNomeMaisVelho);
             Console.WriteLine("Com : " + auxMaisVelho + " anos de idade.");
             Console.WriteLine("O Cidadão mais novo é: " + auxNomeMaisNovo);
@@ -56,7 +56,7 @@ namespace MedindoAFebreUnidadesIXeX
                 Console.WriteLine("Nome: " + Nome[i]);
                 Console.WriteLine("Idade: " + Idade[i]);
                 Console.WriteLine("Sexo: " + Sexo[i]);
-                Console.WriteLine("Altura: " + Altura[i] + " Metros de altura.");
+                Console.WriteLine("Altura: " + Altura[i].ToString("##.##") + " Metros de altura.");
                 Console.WriteLine("Adulto: " + Adulto[i]);
             }
             Console.ReadKey();
