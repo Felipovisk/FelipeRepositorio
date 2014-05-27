@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{291B2CFD-6423-4932-8353-5361B6B78CF0}</ProjectGuid>
+    <ProjectGuid>{25B52ED0-B28D-4F99-9A62-301373871715}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Unidade6</RootNamespace>
-    <AssemblyName>Unidade6</AssemblyName>
+    <RootNamespace>MedindoAFebreUnidadesIXeX</RootNamespace>
+    <AssemblyName>MedindoAFebreUnidadesIXeX</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,28 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercicios Complementares\Exercicio1.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio2.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio3.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio4.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio5.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio6.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio7.cs" />
-    <Compile Include="Exercicios Complementares\Exercicio8.cs" />
-    <Compile Include="Exercicios de Fixação\ExerciciosOperadoresRelacionais.cs" />
-    <Compile Include="ExerciciosFixação2\Exercicio1.cs" />
-    <Compile Include="ExerciciosFixação2\Exercicio10.cs" />
-    <Compile Include="ExerciciosFixação2\Exercicio2.cs" />
-    <Compile Include="ExerciciosFixação2\Exercicio3.cs" />
-    <Compile Include="ExerciciosFixação2\Exercicio8.cs" />
-    <Compile Include="ExerciciosFixação2\Exercicio9.cs" />
+    <Compile Include="Exercicio13.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
