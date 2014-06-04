@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Desafio.cs" />
     <Compile Include="Exercicio1.cs" />
     <Compile Include="Exercicio2.cs" />
     <Compile Include="Exercicio3.cs" />
+    <Compile Include="Exercicio4.cs" />
+    <Compile Include="Exercicio5.cs" />
+    <Compile Include="Exercicio6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

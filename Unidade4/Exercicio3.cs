@@ -13,7 +13,7 @@ namespace Unidade4
         public static int[,] Elementos = new int[5, 6];
         public static int[,] Elementos2 = new int[3, 4];
         public static Random Gerador = new Random();
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             for (int i = 0; i < 3; i++)
             {
