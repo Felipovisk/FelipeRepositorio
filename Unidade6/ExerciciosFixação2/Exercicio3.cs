@@ -7,7 +7,7 @@ namespace Unidade6.ExerciciosFixação2
 
     internal class Exercicio3
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             int diaNascimento = 0;
             int mesNascimento = 0;
