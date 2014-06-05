@@ -12,7 +12,7 @@ namespace Unidade6.ExerciciosFixação2
         public static string[] Element = new string[]{"1","2","3","4","5","6","7","8","9","0"};
         public static string[] Elements = new string[]{"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"};
         public static string[] Elementos = new string[15];
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             for (int i = 0; i < 10; i++)
             {
