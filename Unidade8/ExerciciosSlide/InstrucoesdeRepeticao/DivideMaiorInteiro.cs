@@ -10,7 +10,7 @@ namespace Unidade8.ExerciciosSlide.InstrucoesdeRepeticao
     {
         public static int MaiorInt = 2147483647;
         public static double Resultado = 0;
-        public static void Main(String[] Args)
+        public static void Main1(String[] Args)
         {
             Resultado = Resultado + (MaiorInt / 2);
             while (Resultado > 99) 

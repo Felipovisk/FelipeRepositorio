@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExerciciosComplementares\Exercicio1.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio2.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio3.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio4.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio5.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio6.cs" />
     <Compile Include="ExerciciosSlide\ADivididoPorB.cs" />
     <Compile Include="ExerciciosSlide\AprovadoReprovado.cs" />
     <Compile Include="ExerciciosSlide\EscolheCaminho.cs" />
