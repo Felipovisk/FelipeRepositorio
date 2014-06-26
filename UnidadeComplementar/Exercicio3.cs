@@ -11,9 +11,24 @@ namespace UnidadeComplementar
     class Exercicio3
     {
         public static List<string> Nomes = new List<string>();
+        public static string Nome = "";
         public static void Main(string[] args)
         {
-
+            Console.WriteLine("Digite o nome do cidadão, se quiser sair do programa digite 'FIM'.");
+            Nome = Console.ReadLine();
+            while (Nome != "FIM")
+            {
+                Nomes.Add(Nome);
+                Console.WriteLine("Digite o nome do cidadão, se quiser sair do programa digite 'FIM'.");
+                Nome = Console.ReadLine();
+            }
+            Nomes.Sort();
+            Console.Clear();
+            foreach (string element in Nomes)
+            {
+                Console.WriteLine(element);
+            }
+            Console.ReadKey();
         }
     }
 }
