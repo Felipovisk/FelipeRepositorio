@@ -12,7 +12,7 @@ namespace UnidadeComplementar
     {
         public static List<string> Nomes = new List<string>();
         public static string Nome = "";
-        public static void Main(string[] args)
+        public static void Main2(string[] args)
         {
             Console.WriteLine("Digite o nome do cidadão, se quiser sair do programa digite 'FIM'.");
             Nome = Console.ReadLine();
