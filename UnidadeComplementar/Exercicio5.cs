@@ -12,7 +12,7 @@ namespace UnidadeComplementar
     class Exercicio5
     {
         static public Dictionary<int, string> GruposCopa = new Dictionary<int, string>();
-        public static void Main(string[] args)
+        public static void Main2(string[] args)
         {
 
         }

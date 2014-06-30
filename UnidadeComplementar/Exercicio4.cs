@@ -15,7 +15,7 @@ namespace UnidadeComplementar
         public static List<double> Decimais = new List<double>();
         public static Dictionary<double, int> Registros = new Dictionary<double, int>();
         public static Random Gerador = new Random();
-        public static void Main(string[] args)
+        public static void Main2(string[] args)
         {
             for (int i = 0; i < 5; i++)
             {
